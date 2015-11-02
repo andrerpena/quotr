@@ -75,7 +75,7 @@ Displays the history for a given symbol. Examples:
 
     h aapl (displays the last 10 days history of the `aapl` symbol, which is the default in case no interval is specified)
     h aapl -l 60 (displays the last 60 days history for the `aapl` symbol)
-    h aapl -f 2015-10-01 -t 2015-10-30 (displays the history from the `aapl` symbol from 2015-10-01 to 2015-10-30)
+    h aapl -f 2015-10-01 -t 2015-10-30 (displays the history for the `aapl` symbol from 2015-10-01 to 2015-10-30)
     
 ![image](http://i.imgur.com/JpsM2wr.png)
     
@@ -83,10 +83,22 @@ Displays the history for a given symbol. Examples:
 
 Displays the variation of the given symbol. Examples:
 
-    v aapl (displays the last 10 days history of the `aapl` symbol, which is the default in case no interval is specified)
-    v aapl -l 60 (displays the last 60 days history for the `aapl` symbol)
-    v aapl -f 2015-10-01 -t 2015-10-30 (displays the history from the `aapl` symbol from 2015-10-01 to 2015-10-30)
+    v aapl (displays the last 10 days variation of the `aapl` symbol, which is the default in case no interval is specified)
+    v aapl -l 60 (displays the last 60 days variation for the `aapl` symbol)
+    v aapl -f 2015-10-01 -t 2015-10-30 (displays the varoatopm for the `aapl` symbol from 2015-10-01 to 2015-10-30)
     
 Currently, the `variation` command does not take into account the current day until it's closed.
 
 ![image](http://i.imgur.com/eorRB2I.png)
+
+###License###
+
+MIT.
+
+###Third Party###
+
+ - [vorpal](https://github.com/dthree/vorpal) - For creating the CLI.
+ - [node-yahoo-finance](https://github.com/pilwon/node-yahoo-finance) - For getting data out of Yahoo Finance.
+ - [yahoo-ticker-symbol-downloader](https://github.com/Benny-/Yahoo-ticker-symbol-downloader) - For getting all the ticker symbols our of Yahoo Finance.
+ - [babar](https://github.com/stephan83/babar) - For creating the bar charts.
+ 
