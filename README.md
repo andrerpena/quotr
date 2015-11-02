@@ -65,6 +65,8 @@ Displays or searches for the available `snapshot` fields. Examples:
     f (displays all fields)
     f -s average (displays all fields that match `average`)
     
+Currently, the `history` command does not take into account the current day until it's closed.
+    
 ![image](http://i.imgur.com/TIngeBa.png)
 
 ###`history` (short: `h`)###
@@ -77,5 +79,14 @@ Displays the history for a given symbol. Examples:
     
 ![image](http://i.imgur.com/JpsM2wr.png)
     
+###`variation` (short: `v`)###
 
+Displays the variation of the given symbol. Examples:
+
+    v aapl (displays the last 10 days history of the `aapl` symbol, which is the default in case no interval is specified)
+    v aapl -l 60 (displays the last 60 days history for the `aapl` symbol)
+    v aapl -f 2015-10-01 -t 2015-10-30 (displays the history from the `aapl` symbol from 2015-10-01 to 2015-10-30)
     
+Currently, the `variation` command does not take into account the current day until it's closed.
+
+![image](http://i.imgur.com/eorRB2I.png)
