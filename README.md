@@ -19,7 +19,17 @@ Open the terminal (or command prompt on Windows) and type:
 
     quotr
     
-Now you can start entering commands
+Now you've entered the `quotr` shell.
+    
+For getting all available commands:
+
+    help
+    
+for getting help for a specific command:
+
+    <command> /?
+    
+Now you can start entering commands...
 
 ##Commands##
 
@@ -46,6 +56,26 @@ Optionally, you can pass fields in using the `-f` parameter. Example:
     
 ![image](http://i.imgur.com/35iDFh0.png)
 
+Now it would be helpful to know the available fields for the `s` command...
 
+###`field-list` (short: `f`)###
+
+Displays or searches for the available `snapshot` fields. Examples:
+
+    f (displays all fields)
+    f -s average (displays all fields that match `average`)
     
+![image](http://i.imgur.com/TIngeBa.png)
+
+###`history` (short: `h`)###
+
+Displays the history for a given symbol. Examples:
+
+    h aapl (displays the last 10 days history of the `aapl` symbol, which is the default in case no interval is specified)
+    h aapl -l 60 (displays the last 60 days history for the `aapl` symbol)
+    h aapl -f 2015-10-01 -t 2015-10-30 (displays the history from the `aapl` symbol from 2015-10-01 to 2015-10-30)
+    
+![image](http://i.imgur.com/JpsM2wr.png)
+    
+
     
