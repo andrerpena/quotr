@@ -5,6 +5,7 @@ import Command from './Command';
 import yahooFinance from 'yahoo-finance';
 import stringHelper from '../lib/stringHelper';
 import th from '../lib/tableHelper';
+import snapshotFieldFormatter from '../lib/snapshotFieldFormatter';
 
 let Column = th.Column;
 let tableHelper = th.tableHelper;
@@ -12,7 +13,7 @@ let tableHelper = th.tableHelper;
 class SnapshotCommand extends Command {
     setup(vorpal: Vorpal): void {
         vorpal
-            .command('snapshot <symbol>', 'Displays the current snapshot of the given symbols')
+            .command('snapshot <symbol>', 'Displays the current snapshot of the given symbol')
             .option('-f, --fields <fields>', 'Fields that should be displayed')
             .alias('s')
             .action(function(args, callback) {
@@ -49,7 +50,7 @@ class SnapshotCommand extends Command {
                             snapshotFields.forEach( f=> {
                                 let rowData = [f];
                                 for(let i = 0; i < snapshot.length; i++) {
-                                    rowData.push(snapshot[i][f]);
+                                    rowData.push(snapshotFieldFormatter.formatValue(f, snapshot[i][f]));
                                 }
                                 data.push(rowData);
                             });

@@ -14,9 +14,9 @@ let tableHelper = th.tableHelper;
 class SnapshotCommand extends Command {
     setup(vorpal: Vorpal): void {
         vorpal
-            .command('snapshot-field-list', 'Displays all possible fields for a snapshot')
+            .command('field-list', 'Displays all possible fields for a snapshot')
             .option('-s, --search <search>', 'Searchs for fields that match the given string')
-            .alias('sfl')
+            .alias('f')
             .action(function(args, callback) {
 
                 let columns = [new Column('field', 5, 'white', ' ', true), new Column('description', 60, 'green', ' ', false)];

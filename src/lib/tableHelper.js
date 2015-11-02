@@ -20,11 +20,11 @@ class TableHelper {
     createTable(columns:Array<Column>, data: Array<Array<string>>): string {
         //print header
         let result:string = '';
-        let tableGutter = 3;
+        let tableGutter = 2;
 
         // header
         for(let i =0; i<columns.length;i++) {
-            result += colors.blue(stringHelper.pad(columns[i].size, columns[i].paddingCharacter, columns[i].title, columns[i].padLeft));
+            result += colors.yellow(stringHelper.pad(columns[i].size, columns[i].paddingCharacter, columns[i].title, columns[i].padLeft));
             result += Array(tableGutter + 1).join(' ');
         }
 
