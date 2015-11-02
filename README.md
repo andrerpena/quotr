@@ -2,8 +2,8 @@
 
 Quotr is a [Node.js](https://nodejs.org/en/) [CLI](https://en.wikipedia.org/wiki/Command-line_interface) 
 for getting near real-time stock quotes from [Yahoo Finance](http://finance.yahoo.com/).
-It works for pretty much every relevant ticker in the world (currently 26.626 symbols). The delay depends on the Yahoo's data provider. 
-Normally it's 15 minutes. You can check the list of exchanges and corresponding delay [here](https://help.yahoo.com/kb/SLN2310.html).
+It works for pretty much every relevant ticker in the world (currently 26.626 symbols across the globe). The delay depends on the Yahoo's data provider. 
+Normally it's 15 minutes. You can check the list of exchanges and their corresponding delays [here](https://help.yahoo.com/kb/SLN2310.html).
 
 
 
