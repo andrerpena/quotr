@@ -1,4 +1,4 @@
-#Quotr#
+# Quotr #
 
 Quotr is a [Node.js](https://nodejs.org/en/) [CLI](https://en.wikipedia.org/wiki/Command-line_interface) 
 for getting near real-time stock quotes from [Yahoo Finance](http://finance.yahoo.com/).
@@ -7,13 +7,13 @@ Normally it's 15 minutes. You can check the list of exchanges and their correspo
 
 
 
-#Installing#
+# Installing #
 
 Make sure you have [Node.js installed](https://nodejs.org/en/download/package-manager/), then... (you'll need `sudo` on linux boxes)
 
     npm install -g quotr
     
-#Using#
+# Using #
 
 Open the terminal (or command prompt on Windows) and type:
 
@@ -25,15 +25,15 @@ For getting all available commands:
 
     help
     
-for getting help for a specific command:
+For getting help for a specific command:
 
     <command> /?
     
 Now you can start entering commands...
 
-##Commands##
+## Commands ##
 
-###`symbol-search` (short: `ss`)###
+### `symbol-search` (short: `ss`) ###
 
 Searchs for ticker symbols that match the given criteria. Example:
 
@@ -41,7 +41,7 @@ Searchs for ticker symbols that match the given criteria. Example:
     
 ![image](http://i.imgur.com/0IBjBEL.png)
 
-###`snapshot` (short: `s`)###
+### `snapshot` (short: `s`) ###
 
 
 Displays the latest information about the given symbol. Example:
@@ -58,7 +58,7 @@ Optionally, you can pass fields in using the `-f` parameter. Example:
 
 Now it would be helpful to know the available fields for the `s` command...
 
-###`field-list` (short: `f`)###
+### `field-list` (short: `f`) ###
 
 Displays or searches for the available `snapshot` fields. Examples:
 
@@ -68,7 +68,7 @@ Displays or searches for the available `snapshot` fields. Examples:
     
 ![image](http://i.imgur.com/TIngeBa.png)
 
-###`history` (short: `h`)###
+### `history` (short: `h`) ###
 
 Displays the history for a given symbol. Examples:
 
@@ -80,7 +80,7 @@ Currently, the `history` command does not take into account the current day unti
     
 ![image](http://i.imgur.com/JpsM2wr.png)
     
-###`variation` (short: `v`)###
+### `variation` (short: `v`) ###
 
 Displays the variation of the given symbol. Examples:
 
@@ -92,11 +92,11 @@ Currently, the `variation` command does not take into account the current day un
 
 ![image](http://i.imgur.com/eorRB2I.png)
 
-###License###
+### License ###
 
 MIT.
 
-###Third Party###
+### Third Party ###
 
  - [vorpal](https://github.com/dthree/vorpal) - For creating the CLI.
  - [node-yahoo-finance](https://github.com/pilwon/node-yahoo-finance) - For getting data out of Yahoo Finance.
